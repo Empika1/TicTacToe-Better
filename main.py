@@ -4,6 +4,7 @@ import gameLogic
 
 root = tk.Tk()
 root.title("TicTacToe")
+root.resizable(False, False)
 
 buttons = []
 
@@ -97,6 +98,7 @@ def buttonClicked(x, y):
         endWindow = tk.Tk()
         endWindow.geometry("256x94")
         endWindow.protocol("WM_DELETE_WINDOW", playAgain)
+        endWindow.resizable(False, False)
 
         bottomframe = tk.Frame(endWindow, bg="white")
         bottomframe.pack(side="bottom")
